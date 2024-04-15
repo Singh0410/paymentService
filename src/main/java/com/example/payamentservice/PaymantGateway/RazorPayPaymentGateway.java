@@ -53,7 +53,7 @@ public class RazorPayPaymentGateway implements PaymentGatewayInterface{
         catch (RazorpayException razorpayException)
         {
             System.out.println(razorpayException);
-            System.out.println("Something went wrong");
+            System.out.println("Something went wrong please check");
         }
         return payment.get("short_url");
     }
